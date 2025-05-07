@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - AZMAK</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#" id="viewStudents">Student Profiles</a></li>
+            <li><a href="#">Progress Reports</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="admin-login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+        <h1>Welcome, AZMAK Student Profile Management </h1>
+        <p>Manage student profiles and track progress.</p>
+
+        <div class="stats">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">120</p>
+            </div>
+            <div class="card">
+                <h3>Courses Enrolled</h3>
+                <p id="totalCourses">15</p>
+            </div>
+            <div class="card">
+                <h3>Active Students</h3>
+                <p id="activeStudents">85</p>
+            </div>
+        </div>
+
+        <!-- Student List (Hidden Initially) -->
+        <div class="students-section hidden" id="studentsSection">
+            <h2>Student Profiles</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Progress</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTable">
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Frontend Development</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Cyber Security</td>
+                        <td>90%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
